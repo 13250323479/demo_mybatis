@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "name": "snowflakeIdWorker",
+      "type": "com.demo.mybatis.utils.SnowflakeIdWorker",
+      "sourceType": "com.demo.mybatis.utils.SnowflakeIdWorker"
+    }
+  ],
+  "properties": [
+    {
+      "name": "snowflakeIdWorker.datacenter-id",
+      "type": "java.lang.Long",
+      "description": "数据中心ID(0~31)",
+      "sourceType": "com.demo.mybatis.utils.SnowflakeIdWorker",
+      "defaultValue": 0
+    },
+    {
+      "name": "snowflakeIdWorker.last-timestamp",
+      "type": "java.lang.Long",
+      "description": "上次生成ID的时间截",
+      "sourceType": "com.demo.mybatis.utils.SnowflakeIdWorker",
+      "defaultValue": -1
+    },
+    {
+      "name": "snowflakeIdWorker.sequence",
+      "type": "java.lang.Long",
+      "description": "毫秒内序列(0~4095)",
+      "sourceType": "com.demo.mybatis.utils.SnowflakeIdWorker",
+      "defaultValue": 0
+    },
+    {
+      "name": "snowflakeIdWorker.worker-id",
+      "type": "java.lang.Long",
+      "description": "工作机器ID(0~31)",
+      "sourceType": "com.demo.mybatis.utils.SnowflakeIdWorker",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

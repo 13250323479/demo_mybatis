@@ -1,0 +1,24 @@
+#开发配置
+spring:
+  profiles: dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/t_mybatis
+    username: root
+    password: asd123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+  jpa:
+    show-sql: true
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.demo.mybatis.entity
+  mapperLocations: classpath:mapper/*.xml
+
+server:
+  port: 8080
+
+snowflakeIdWorker:
+  workerId: 0
+  datacenterId: 0
